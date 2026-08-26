@@ -1,4 +1,5 @@
-﻿using Microsoft.Xna.Framework;
+﻿using System;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -22,12 +23,12 @@ public class Game1 : Game
 
     protected override void Initialize()
     {
-        // TODO: Add your initialization logic here
-        _graphics.PreferredBackBufferWidth = 1280;
-        _graphics.PreferredBackBufferHeight = 720;
+        // // TODO: Add your initialization logic here
+        // _graphics.PreferredBackBufferWidth = 1280;
+        // _graphics.PreferredBackBufferHeight = 720;
     
-        // Apply the changes to update the window size
-        _graphics.ApplyChanges();
+        // // Apply the changes to update the window size
+        // _graphics.ApplyChanges();
 
         
         base.Initialize();
@@ -37,14 +38,15 @@ public class Game1 : Game
     {
         _spriteBatch = new SpriteBatch(GraphicsDevice);
 
+        _texture = Content.Load<Texture2D>("smile1");
+
         // TODO: use this.Content to load your game content here
 
         MathHelper.Random rand = new ();
-        _position = new Vector2(rand.NextFloat() * GraphicsDevice.Viewport.Width, rand.NextFloat() * GraphicsDevice.Viewport.Width);
+        _position = new Vector2(rand.NextFloat() * GraphicsDevice.Viewport.Width, rand.NextFloat() * GraphicsDevice.Viewport.Height);
 
-        _direction = new Vector2(300 * rand.NextFloat() -50, 300 * rand.NextFloat() - 50);
+        _direction = new Vector2(500 * rand.NextFloat() -50, 500 * rand.NextFloat() - 50);
         
-        _texture = Content.Load<Texture2D>("smile");
         
     }
 

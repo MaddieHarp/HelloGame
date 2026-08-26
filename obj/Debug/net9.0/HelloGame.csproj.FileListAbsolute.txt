@@ -36,3 +36,4 @@ C:\Users\MadelineHarp\source\repos\HelloGame\obj\Debug\net9.0\HelloGame.pdb
 C:\Users\MadelineHarp\source\repos\HelloGame\obj\Debug\net9.0\HelloGame.genruntimeconfig.cache
 C:\Users\MadelineHarp\source\repos\HelloGame\obj\Debug\net9.0\ref\HelloGame.dll
 C:\Users\MadelineHarp\source\repos\HelloGame\bin\Debug\net9.0\Content\smile.xnb
+C:\Users\MadelineHarp\source\repos\HelloGame\bin\Debug\net9.0\Content\smile1.xnb
