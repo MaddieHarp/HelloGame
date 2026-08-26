@@ -1,0 +1,1 @@
+smile.png - created by me in mspaint
